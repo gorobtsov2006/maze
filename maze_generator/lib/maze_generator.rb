@@ -12,6 +12,48 @@
         @grid = generate_maze
       end
 
+      def solve(start:, goal:)
+        raise ArgumentError, "Invalid start coordinates" unless valid_position?(start)
+        raise ArgumentError, "Invalid goal coordinates" unless valid_position?(goal)
+        bfs(start, goal)
+      end
+
+      private
+
+    def bfs(start, goal)
+      queue = [[start, [start]]]
+      visited = Set.new([start])
+      directions = [[0, 1], [1, 0], [0, -1], [-1, 0]]
+
+      until queue.empty?
+        (x, y), path = queue.shift
+        return path if [x, y] == goal
+
+        directions.each do |dx, dy|
+          nx, ny = x + dx, y + dy
+          next unless valid_move?(nx, ny, visited)
+
+          queue << [[nx, ny], path + [[nx, ny]]]
+          visited << [nx, ny]
+        end
+      end
+      []
+    end
+
+    def valid_position?(pos)
+      x, y = pos
+      x.between?(0, @height * 2) &&
+        y.between?(0, @width * 2) &&
+        @grid[x][y] == " "
+    end
+
+    def valid_move?(x, y, visited)
+      x.between?(0, @height * 2) &&
+        y.between?(0, @width * 2) &&
+        @grid[x][y] == " " &&
+        !visited.include?([x, y])
+    end
+
       private
 
       def generate_maze
