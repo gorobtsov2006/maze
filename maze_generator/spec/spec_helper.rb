@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require "simplecov"
+require 'simplecov'
 SimpleCov.start
 
-require "maze_generator"
+require 'maze_generator'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
