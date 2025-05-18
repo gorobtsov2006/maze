@@ -22,4 +22,30 @@
         expect(grid.flatten).to include(" ", "#")
       end
     end
+    describe "#solve" do
+    let(:maze) { described_class.new(width: 3, height: 3) }
+
+    it "raises error for invalid start coordinates" do
+      expect { maze.solve(start: [0, 0], goal: [4, 4]) }.to raise_error(ArgumentError, "Invalid start coordinates")
+    end
+
+    it "raises error for invalid goal coordinates" do
+      expect { maze.solve(start: [1, 1], goal: [0, 0]) }.to raise_error(ArgumentError, "Invalid goal coordinates")
+    end
+
+    it "returns a valid path from start to goal" do
+      path = maze.solve(start: [1, 1], goal: [5, 5])
+      expect(path).to be_an(Array)
+      expect(path).not_to be_empty unless path.empty?
+      expect(path.first).to eq([1, 1]) if path.any?
+      expect(path.last).to eq([5, 5]) if path.any?
+    end
+
+    it "returns empty array if no path exists" do
+      maze.instance_variable_get(:@grid)[1][2] = "#"
+      maze.instance_variable_get(:@grid)[2][1] = "#"
+      path = maze.solve(start: [1, 1], goal: [5, 5])
+      expect(path).to eq([])
+    end
   end
+end
