@@ -13,7 +13,7 @@
       <img src="./assets/0.13.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2025-05-18T14:51:59+03:00">2025-05-18T14:51:59+03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2025-05-18T15:24:05+03:00">2025-05-18T15:24:05+03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -29,7 +29,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         14.57
+         18.79
        </span>
     </span> hits/line
     )
@@ -42,8 +42,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>91</b> relevant lines,
-    <span class="green"><b>91</b> lines covered</span> and
+    <b>92</b> relevant lines,
+    <span class="green"><b>92</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -72,20 +72,20 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#b9d03ecfd4905b3a2c589e6daa492abceb884580" class="src_link" title="lib/maze_generator.rb">lib/maze_generator.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">90</td>
-            <td class="cell--number">51</td>
-            <td class="cell--number">51</td>
+            <td class="cell--number">93</td>
+            <td class="cell--number">53</td>
+            <td class="cell--number">53</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">25.04</td>
+            <td class="cell--number">31.72</td>
             
           </tr>
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#b7c6be112fcff5725f5f5f7108fe26ed4288c8ad" class="src_link" title="spec/maze_generator_spec.rb">spec/maze_generator_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">64</td>
-            <td class="cell--number">40</td>
-            <td class="cell--number">40</td>
+            <td class="cell--number">63</td>
+            <td class="cell--number">39</td>
+            <td class="cell--number">39</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.23</td>
             
@@ -122,8 +122,8 @@
     
 
     <div class="t-line-summary">
-      <b>51</b> relevant lines.
-      <span class="green"><b>51</b> lines covered</span> and
+      <b>53</b> relevant lines.
+      <span class="green"><b>53</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -155,19 +155,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="3">
-            
-              <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">require &quot;set&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="4">
+          <li class="never" data-hits="" data-linenumber="3">
             
 
             
@@ -177,7 +165,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
+          <li class="covered" data-hits="1" data-linenumber="4">
             
               <span class="hits">1</span>
             
@@ -185,6 +173,16 @@
             
 
             <code class="ruby">module MazeGenerator</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+
+            
+
+            <code class="ruby">  # Класс, реализующий генерацию и работу с лабиринтом</code>
           </li>
         </div>
       
@@ -242,7 +240,7 @@
 
             
 
-            <code class="ruby">      raise ArgumentError, &quot;Width must be positive&quot; unless width.positive?</code>
+            <code class="ruby">      raise ArgumentError, &#39;Width must be positive&#39; unless width.positive?</code>
           </li>
         </div>
       
@@ -254,19 +252,17 @@
 
             
 
-            <code class="ruby">      raise ArgumentError, &quot;Height must be positive&quot; unless height.positive?</code>
+            <code class="ruby">      raise ArgumentError, &#39;Height must be positive&#39; unless height.positive?</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="12">
-            
-              <span class="hits">6</span>
+          <li class="never" data-hits="" data-linenumber="12">
             
 
             
 
-            <code class="ruby">      @width = width</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -278,7 +274,7 @@
 
             
 
-            <code class="ruby">      @height = height</code>
+            <code class="ruby">      @width = width</code>
           </li>
         </div>
       
@@ -290,17 +286,19 @@
 
             
 
-            <code class="ruby">      @grid = generate_maze</code>
+            <code class="ruby">      @height = height</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="15">
+          <li class="covered" data-hits="6" data-linenumber="15">
+            
+              <span class="hits">6</span>
             
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">      @grid = generate_maze</code>
           </li>
         </div>
       
@@ -310,12 +308,22 @@
 
             
 
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="17">
+          <li class="covered" data-hits="1" data-linenumber="18">
             
               <span class="hits">1</span>
             
@@ -327,24 +335,14 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="18">
+          <li class="covered" data-hits="1" data-linenumber="19">
             
-              <span class="hits">6</span>
-            
-
-            
-
-            <code class="ruby">      @grid.map { |row| row.join }.join(&quot;\n&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="19">
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">      @grid.map(&amp;:join).join(&quot;\n&quot;)</code>
           </li>
         </div>
       
@@ -354,12 +352,22 @@
 
             
 
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="21">
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="21">
+          <li class="covered" data-hits="1" data-linenumber="22">
             
               <span class="hits">1</span>
             
@@ -371,31 +379,41 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="22">
+          <li class="covered" data-hits="4" data-linenumber="23">
             
               <span class="hits">4</span>
             
 
             
 
-            <code class="ruby">      raise ArgumentError, &quot;Invalid start coordinates&quot; unless valid_position?(start)</code>
+            <code class="ruby">      raise ArgumentError, &#39;Invalid start coordinates&#39; unless valid_position?(start)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="23">
+          <li class="covered" data-hits="3" data-linenumber="24">
             
               <span class="hits">3</span>
             
 
             
 
-            <code class="ruby">      raise ArgumentError, &quot;Invalid goal coordinates&quot; unless valid_position?(goal)</code>
+            <code class="ruby">      raise ArgumentError, &#39;Invalid goal coordinates&#39; unless valid_position?(goal)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="24">
+          <li class="never" data-hits="" data-linenumber="25">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="26">
             
               <span class="hits">2</span>
             
@@ -407,34 +425,12 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="25">
+          <li class="never" data-hits="" data-linenumber="27">
             
 
             
 
             <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="26">
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="27">
-            
-              <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    private</code>
           </li>
         </div>
       
@@ -456,24 +452,46 @@
 
             
 
+            <code class="ruby">    private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="30">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="31">
+            
+              <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    def generate_maze</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="46" data-linenumber="30">
+          <li class="covered" data-hits="46" data-linenumber="32">
             
               <span class="hits">46</span>
             
 
             
 
-            <code class="ruby">      grid = Array.new(@height * 2 + 1) { Array.new(@width * 2 + 1, &quot;#&quot;) }</code>
+            <code class="ruby">      grid = Array.new((@height * 2) + 1) { Array.new((@width * 2) + 1, &#39;#&#39;) }</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="31">
+          <li class="covered" data-hits="6" data-linenumber="33">
             
               <span class="hits">6</span>
             
@@ -485,7 +503,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="32">
+          <li class="covered" data-hits="6" data-linenumber="34">
             
               <span class="hits">6</span>
             
@@ -497,7 +515,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="33">
+          <li class="never" data-hits="" data-linenumber="35">
             
 
             
@@ -507,7 +525,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="34">
+          <li class="never" data-hits="" data-linenumber="36">
             
 
             
@@ -517,7 +535,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="35">
+          <li class="covered" data-hits="1" data-linenumber="37">
             
               <span class="hits">1</span>
             
@@ -529,7 +547,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="49" data-linenumber="36">
+          <li class="covered" data-hits="49" data-linenumber="38">
             
               <span class="hits">49</span>
             
@@ -541,19 +559,19 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="49" data-linenumber="37">
+          <li class="covered" data-hits="49" data-linenumber="39">
             
               <span class="hits">49</span>
             
 
             
 
-            <code class="ruby">      grid[x][y] = &quot; &quot;</code>
+            <code class="ruby">      grid[x][y] = &#39; &#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="49" data-linenumber="38">
+          <li class="covered" data-hits="49" data-linenumber="40">
             
               <span class="hits">49</span>
             
@@ -565,7 +583,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="49" data-linenumber="39">
+          <li class="covered" data-hits="49" data-linenumber="41">
             
               <span class="hits">49</span>
             
@@ -577,19 +595,31 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="196" data-linenumber="40">
+          <li class="covered" data-hits="196" data-linenumber="42">
             
               <span class="hits">196</span>
             
 
             
 
-            <code class="ruby">        nx, ny = x + dx, y + dy</code>
+            <code class="ruby">        nx = x + dx</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="196" data-linenumber="41">
+          <li class="covered" data-hits="196" data-linenumber="43">
+            
+              <span class="hits">196</span>
+            
+
+            
+
+            <code class="ruby">        ny = y + dy</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="196" data-linenumber="44">
             
               <span class="hits">196</span>
             
@@ -601,7 +631,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="42">
+          <li class="never" data-hits="" data-linenumber="45">
             
 
             
@@ -611,31 +641,31 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="43" data-linenumber="43">
+          <li class="covered" data-hits="43" data-linenumber="46">
             
               <span class="hits">43</span>
             
 
             
 
-            <code class="ruby">        grid[x + dx / 2][y + dy / 2] = &quot; &quot;</code>
+            <code class="ruby">        grid[x + (dx / 2)][y + (dy / 2)] = &#39; &#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="43" data-linenumber="44">
+          <li class="covered" data-hits="43" data-linenumber="47">
             
               <span class="hits">43</span>
             
 
             
 
-            <code class="ruby">        grid[nx][ny] = &quot; &quot;</code>
+            <code class="ruby">        grid[nx][ny] = &#39; &#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="43" data-linenumber="45">
+          <li class="covered" data-hits="43" data-linenumber="48">
             
               <span class="hits">43</span>
             
@@ -647,7 +677,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="46">
+          <li class="never" data-hits="" data-linenumber="49">
             
 
             
@@ -657,7 +687,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="47">
+          <li class="never" data-hits="" data-linenumber="50">
             
 
             
@@ -667,7 +697,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="48">
+          <li class="never" data-hits="" data-linenumber="51">
             
 
             
@@ -677,7 +707,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="49">
+          <li class="covered" data-hits="1" data-linenumber="52">
             
               <span class="hits">1</span>
             
@@ -689,39 +719,41 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="196" data-linenumber="50">
+          <li class="covered" data-hits="196" data-linenumber="53">
             
               <span class="hits">196</span>
             
 
             
 
-            <code class="ruby">      x.between?(1, @height * 2 - 1) &amp;&amp;</code>
+            <code class="ruby">      x.between?(1, (@height * 2) - 1) &amp;&amp;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="51">
+          <li class="covered" data-hits="162" data-linenumber="54">
+            
+              <span class="hits">162</span>
             
 
             
 
-            <code class="ruby">        y.between?(1, @width * 2 - 1) &amp;&amp;</code>
+            <code class="ruby">        y.between?(1, (@width * 2) - 1) &amp;&amp;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="52">
+          <li class="never" data-hits="" data-linenumber="55">
             
 
             
 
-            <code class="ruby">        grid[x][y] == &quot;#&quot;</code>
+            <code class="ruby">        grid[x][y] == &#39;#&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="53">
+          <li class="never" data-hits="" data-linenumber="56">
             
 
             
@@ -731,7 +763,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="54">
+          <li class="never" data-hits="" data-linenumber="57">
             
 
             
@@ -741,7 +773,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="55">
+          <li class="covered" data-hits="1" data-linenumber="58">
             
               <span class="hits">1</span>
             
@@ -753,7 +785,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="56">
+          <li class="covered" data-hits="2" data-linenumber="59">
             
               <span class="hits">2</span>
             
@@ -765,7 +797,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="57">
+          <li class="covered" data-hits="2" data-linenumber="60">
             
               <span class="hits">2</span>
             
@@ -777,7 +809,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="58">
+          <li class="covered" data-hits="2" data-linenumber="61">
             
               <span class="hits">2</span>
             
@@ -789,7 +821,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="59">
+          <li class="never" data-hits="" data-linenumber="62">
             
 
             
@@ -799,7 +831,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="60">
+          <li class="covered" data-hits="2" data-linenumber="63">
             
               <span class="hits">2</span>
             
@@ -811,7 +843,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="14" data-linenumber="61">
+          <li class="covered" data-hits="14" data-linenumber="64">
             
               <span class="hits">14</span>
             
@@ -823,19 +855,19 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="14" data-linenumber="62">
+          <li class="covered" data-hits="14" data-linenumber="65">
             
               <span class="hits">14</span>
             
 
             
 
-            <code class="ruby">        return path if [x, y] == goal</code>
+            <code class="ruby">        return path if goal == [x, y]</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="63">
+          <li class="never" data-hits="" data-linenumber="66">
             
 
             
@@ -845,7 +877,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="13" data-linenumber="64">
+          <li class="covered" data-hits="13" data-linenumber="67">
             
               <span class="hits">13</span>
             
@@ -857,19 +889,31 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="52" data-linenumber="65">
+          <li class="covered" data-hits="52" data-linenumber="68">
             
               <span class="hits">52</span>
             
 
             
 
-            <code class="ruby">          nx, ny = x + dx, y + dy</code>
+            <code class="ruby">          nx = x + dx</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="52" data-linenumber="66">
+          <li class="covered" data-hits="52" data-linenumber="69">
+            
+              <span class="hits">52</span>
+            
+
+            
+
+            <code class="ruby">          ny = y + dy</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="52" data-linenumber="70">
             
               <span class="hits">52</span>
             
@@ -881,7 +925,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="67">
+          <li class="never" data-hits="" data-linenumber="71">
             
 
             
@@ -891,7 +935,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="68">
+          <li class="covered" data-hits="12" data-linenumber="72">
             
               <span class="hits">12</span>
             
@@ -903,7 +947,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="69">
+          <li class="covered" data-hits="12" data-linenumber="73">
             
               <span class="hits">12</span>
             
@@ -915,7 +959,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="70">
+          <li class="never" data-hits="" data-linenumber="74">
             
 
             
@@ -925,7 +969,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="71">
+          <li class="never" data-hits="" data-linenumber="75">
             
 
             
@@ -935,7 +979,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="72">
+          <li class="covered" data-hits="1" data-linenumber="76">
             
               <span class="hits">1</span>
             
@@ -947,7 +991,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="73">
+          <li class="never" data-hits="" data-linenumber="77">
             
 
             
@@ -957,7 +1001,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="74">
+          <li class="never" data-hits="" data-linenumber="78">
             
 
             
@@ -967,7 +1011,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="75">
+          <li class="covered" data-hits="1" data-linenumber="79">
             
               <span class="hits">1</span>
             
@@ -979,7 +1023,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="76">
+          <li class="covered" data-hits="7" data-linenumber="80">
             
               <span class="hits">7</span>
             
@@ -991,7 +1035,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="77">
+          <li class="covered" data-hits="7" data-linenumber="81">
             
               <span class="hits">7</span>
             
@@ -1003,7 +1047,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="78">
+          <li class="never" data-hits="" data-linenumber="82">
             
 
             
@@ -1013,17 +1057,17 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="79">
+          <li class="never" data-hits="" data-linenumber="83">
             
 
             
 
-            <code class="ruby">        @grid[x][y] == &quot; &quot;</code>
+            <code class="ruby">        @grid[x][y] == &#39; &#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="80">
+          <li class="never" data-hits="" data-linenumber="84">
             
 
             
@@ -1033,7 +1077,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="81">
+          <li class="never" data-hits="" data-linenumber="85">
             
 
             
@@ -1043,17 +1087,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="82">
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="83">
+          <li class="covered" data-hits="1" data-linenumber="86">
             
               <span class="hits">1</span>
             
@@ -1065,7 +1099,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="52" data-linenumber="84">
+          <li class="covered" data-hits="52" data-linenumber="87">
             
               <span class="hits">52</span>
             
@@ -1077,7 +1111,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="85">
+          <li class="never" data-hits="" data-linenumber="88">
             
 
             
@@ -1087,17 +1121,17 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="86">
+          <li class="never" data-hits="" data-linenumber="89">
             
 
             
 
-            <code class="ruby">        @grid[x][y] == &quot; &quot; &amp;&amp;</code>
+            <code class="ruby">        @grid[x][y] == &#39; &#39; &amp;&amp;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="87">
+          <li class="never" data-hits="" data-linenumber="90">
             
 
             
@@ -1107,7 +1141,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="88">
+          <li class="never" data-hits="" data-linenumber="91">
             
 
             
@@ -1117,7 +1151,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="89">
+          <li class="never" data-hits="" data-linenumber="92">
             
 
             
@@ -1127,7 +1161,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="90">
+          <li class="never" data-hits="" data-linenumber="93">
             
 
             
@@ -1155,8 +1189,8 @@
     
 
     <div class="t-line-summary">
-      <b>40</b> relevant lines.
-      <span class="green"><b>40</b> lines covered</span> and
+      <b>39</b> relevant lines.
+      <span class="green"><b>39</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -1195,24 +1229,12 @@
 
             
 
-            <code class="ruby">require &quot;spec_helper&quot;</code>
+            <code class="ruby">require &#39;spec_helper&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
-            
-              <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">require &quot;set&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="5">
+          <li class="never" data-hits="" data-linenumber="4">
             
 
             
@@ -1222,7 +1244,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="6">
+          <li class="covered" data-hits="1" data-linenumber="5">
             
               <span class="hits">1</span>
             
@@ -1234,6 +1256,18 @@
         </div>
       
         <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &#39;#initialize&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
           <li class="covered" data-hits="1" data-linenumber="7">
             
               <span class="hits">1</span>
@@ -1241,31 +1275,29 @@
 
             
 
-            <code class="ruby">  describe &quot;#initialize&quot; do</code>
+            <code class="ruby">    it &#39;raises error for non-positive width&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
-            
-              <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    it &quot;raises error for non-positive width&quot; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="9">
+          <li class="covered" data-hits="2" data-linenumber="8">
             
               <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">      expect { described_class.new(width: 0, height: 5) }.to raise_error(ArgumentError, &quot;Width must be positive&quot;)</code>
+            <code class="ruby">      expect { described_class.new(width: 0, height: 5) }.to raise_error(ArgumentError, &#39;Width must be positive&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+
+            
+
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -1275,41 +1307,41 @@
 
             
 
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="11">
-            
-
-            
-
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="12">
+          <li class="covered" data-hits="1" data-linenumber="11">
             
               <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    it &quot;raises error for non-positive height&quot; do</code>
+            <code class="ruby">    it &#39;raises error for non-positive height&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="13">
+          <li class="covered" data-hits="2" data-linenumber="12">
             
               <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">      expect { described_class.new(width: 5, height: 0) }.to raise_error(ArgumentError, &quot;Height must be positive&quot;)</code>
+            <code class="ruby">      expect { described_class.new(width: 5, height: 0) }.to raise_error(ArgumentError, &#39;Height must be positive&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+
+            
+
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -1319,17 +1351,19 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="15">
+          <li class="covered" data-hits="1" data-linenumber="15">
+            
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    it &#39;generates a valid maze grid&#39; do</code>
           </li>
         </div>
       
@@ -1341,7 +1375,7 @@
 
             
 
-            <code class="ruby">    it &quot;generates a valid maze grid&quot; do</code>
+            <code class="ruby">      maze = described_class.new(width: 3, height: 3)</code>
           </li>
         </div>
       
@@ -1353,7 +1387,7 @@
 
             
 
-            <code class="ruby">      maze = described_class.new(width: 3, height: 3)</code>
+            <code class="ruby">      grid = maze.instance_variable_get(:@grid)</code>
           </li>
         </div>
       
@@ -1365,7 +1399,7 @@
 
             
 
-            <code class="ruby">      grid = maze.instance_variable_get(:@grid)</code>
+            <code class="ruby">      expect(grid).to be_an(Array)</code>
           </li>
         </div>
       
@@ -1377,7 +1411,7 @@
 
             
 
-            <code class="ruby">      expect(grid).to be_an(Array)</code>
+            <code class="ruby">      expect(grid.size).to eq(7)</code>
           </li>
         </div>
       
@@ -1389,7 +1423,7 @@
 
             
 
-            <code class="ruby">      expect(grid.size).to eq(7)</code>
+            <code class="ruby">      expect(grid[0].size).to eq(7)</code>
           </li>
         </div>
       
@@ -1401,24 +1435,12 @@
 
             
 
-            <code class="ruby">      expect(grid[0].size).to eq(7)</code>
+            <code class="ruby">      expect(grid.flatten).to include(&#39; &#39;, &#39;#&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="22">
-            
-              <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      expect(grid.flatten).to include(&quot; &quot;, &quot;#&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="23">
+          <li class="never" data-hits="" data-linenumber="22">
             
 
             
@@ -1428,7 +1450,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="24">
+          <li class="never" data-hits="" data-linenumber="23">
             
 
             
@@ -1438,7 +1460,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="25">
+          <li class="never" data-hits="" data-linenumber="24">
             
 
             
@@ -1448,19 +1470,19 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="26">
+          <li class="covered" data-hits="1" data-linenumber="25">
             
               <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  describe &quot;#to_s&quot; do</code>
+            <code class="ruby">  describe &#39;#to_s&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="27">
+          <li class="covered" data-hits="2" data-linenumber="26">
             
               <span class="hits">2</span>
             
@@ -1472,12 +1494,24 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="28">
+          <li class="never" data-hits="" data-linenumber="27">
             
 
             
 
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="28">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &#39;returns a string representation of the maze&#39; do</code>
           </li>
         </div>
       
@@ -1489,7 +1523,7 @@
 
             
 
-            <code class="ruby">    it &quot;returns a string representation of the maze&quot; do</code>
+            <code class="ruby">      output = maze.to_s</code>
           </li>
         </div>
       
@@ -1501,7 +1535,7 @@
 
             
 
-            <code class="ruby">      output = maze.to_s</code>
+            <code class="ruby">      expect(output).to be_a(String)</code>
           </li>
         </div>
       
@@ -1513,7 +1547,7 @@
 
             
 
-            <code class="ruby">      expect(output).to be_a(String)</code>
+            <code class="ruby">      expect(output.lines.size).to eq(5)</code>
           </li>
         </div>
       
@@ -1525,7 +1559,7 @@
 
             
 
-            <code class="ruby">      expect(output.lines.size).to eq(5)</code>
+            <code class="ruby">      expect(output.lines[0].chomp.size).to eq(5)</code>
           </li>
         </div>
       
@@ -1537,24 +1571,12 @@
 
             
 
-            <code class="ruby">      expect(output.lines[0].chomp.size).to eq(5)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="34">
-            
-              <span class="hits">1</span>
-            
-
-            
-
             <code class="ruby">      expect(output).to match(/[ #]/)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="35">
+          <li class="never" data-hits="" data-linenumber="34">
             
 
             
@@ -1564,7 +1586,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="36">
+          <li class="never" data-hits="" data-linenumber="35">
             
 
             
@@ -1574,7 +1596,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="37">
+          <li class="never" data-hits="" data-linenumber="36">
             
 
             
@@ -1584,19 +1606,19 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="38">
+          <li class="covered" data-hits="1" data-linenumber="37">
             
               <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  describe &quot;#solve&quot; do</code>
+            <code class="ruby">  describe &#39;#solve&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="5" data-linenumber="39">
+          <li class="covered" data-hits="5" data-linenumber="38">
             
               <span class="hits">5</span>
             
@@ -1608,7 +1630,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="40">
+          <li class="never" data-hits="" data-linenumber="39">
             
 
             
@@ -1618,26 +1640,36 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="41">
+          <li class="covered" data-hits="1" data-linenumber="40">
             
               <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    it &quot;raises error for invalid start coordinates&quot; do</code>
+            <code class="ruby">    it &#39;raises error for invalid start coordinates&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="42">
+          <li class="covered" data-hits="2" data-linenumber="41">
             
               <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">      expect { maze.solve(start: [0, 0], goal: [4, 4]) }.to raise_error(ArgumentError, &quot;Invalid start coordinates&quot;)</code>
+            <code class="ruby">      expect { maze.solve(start: [0, 0], goal: [4, 4]) }.to raise_error(ArgumentError, &#39;Invalid start coordinates&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="42">
+            
+
+            
+
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -1647,41 +1679,41 @@
 
             
 
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="44">
-            
-
-            
-
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="45">
+          <li class="covered" data-hits="1" data-linenumber="44">
             
               <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    it &quot;raises error for invalid goal coordinates&quot; do</code>
+            <code class="ruby">    it &#39;raises error for invalid goal coordinates&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="46">
+          <li class="covered" data-hits="2" data-linenumber="45">
             
               <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">      expect { maze.solve(start: [1, 1], goal: [0, 0]) }.to raise_error(ArgumentError, &quot;Invalid goal coordinates&quot;)</code>
+            <code class="ruby">      expect { maze.solve(start: [1, 1], goal: [0, 0]) }.to raise_error(ArgumentError, &#39;Invalid goal coordinates&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="46">
+            
+
+            
+
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -1691,17 +1723,19 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="48">
+          <li class="covered" data-hits="1" data-linenumber="48">
+            
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    it &#39;returns a valid path from start to goal&#39; do</code>
           </li>
         </div>
       
@@ -1713,7 +1747,7 @@
 
             
 
-            <code class="ruby">    it &quot;returns a valid path from start to goal&quot; do</code>
+            <code class="ruby">      path = maze.solve(start: [1, 1], goal: [5, 5])</code>
           </li>
         </div>
       
@@ -1725,7 +1759,7 @@
 
             
 
-            <code class="ruby">      path = maze.solve(start: [1, 1], goal: [5, 5])</code>
+            <code class="ruby">      expect(path).to be_an(Array)</code>
           </li>
         </div>
       
@@ -1737,7 +1771,7 @@
 
             
 
-            <code class="ruby">      expect(path).to be_an(Array)</code>
+            <code class="ruby">      expect(path).not_to be_empty unless path.empty?</code>
           </li>
         </div>
       
@@ -1749,7 +1783,7 @@
 
             
 
-            <code class="ruby">      expect(path).not_to be_empty unless path.empty?</code>
+            <code class="ruby">      expect(path.first).to eq([1, 1]) if path.any?</code>
           </li>
         </div>
       
@@ -1761,24 +1795,12 @@
 
             
 
-            <code class="ruby">      expect(path.first).to eq([1, 1]) if path.any?</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="54">
-            
-              <span class="hits">1</span>
-            
-
-            
-
             <code class="ruby">      expect(path.last).to eq([5, 5]) if path.any?</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="55">
+          <li class="never" data-hits="" data-linenumber="54">
             
 
             
@@ -1788,12 +1810,24 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="56">
+          <li class="never" data-hits="" data-linenumber="55">
             
 
             
 
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="56">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &#39;returns empty array if no path exists&#39; do</code>
           </li>
         </div>
       
@@ -1805,7 +1839,7 @@
 
             
 
-            <code class="ruby">    it &quot;returns empty array if no path exists&quot; do</code>
+            <code class="ruby">      maze.instance_variable_get(:@grid)[1][2] = &#39;#&#39;</code>
           </li>
         </div>
       
@@ -1817,7 +1851,7 @@
 
             
 
-            <code class="ruby">      maze.instance_variable_get(:@grid)[1][2] = &quot;#&quot;</code>
+            <code class="ruby">      maze.instance_variable_get(:@grid)[2][1] = &#39;#&#39;</code>
           </li>
         </div>
       
@@ -1829,7 +1863,7 @@
 
             
 
-            <code class="ruby">      maze.instance_variable_get(:@grid)[2][1] = &quot;#&quot;</code>
+            <code class="ruby">      path = maze.solve(start: [1, 1], goal: [5, 5])</code>
           </li>
         </div>
       
@@ -1841,24 +1875,12 @@
 
             
 
-            <code class="ruby">      path = maze.solve(start: [1, 1], goal: [5, 5])</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="61">
-            
-              <span class="hits">1</span>
-            
-
-            
-
             <code class="ruby">      expect(path).to eq([])</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="62">
+          <li class="never" data-hits="" data-linenumber="61">
             
 
             
@@ -1868,7 +1890,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="63">
+          <li class="never" data-hits="" data-linenumber="62">
             
 
             
@@ -1878,7 +1900,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="64">
+          <li class="never" data-hits="" data-linenumber="63">
             
 
             
